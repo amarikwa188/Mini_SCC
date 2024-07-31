@@ -1,23 +1,73 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
 #main{
     background-color: lightyellow;
     height: 150px;
     width: 400px;
+    margin: auto;
 }
 
 #logo-section{
-    /* display: inline-block; */
     border: 1px solid black;
     float: left;
-    width: 45%;
+    width: 25%;
     box-sizing: border-box;
     height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+
+#logo{
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #entry-section{
-    /* display: inline-block; */
     border: 1px solid black;
     float: right;
-    width: 55%;
+    width: 75%;
     box-sizing: border-box;
     height: 100%;
+
+    text-align: center;
+    /* padding: 35px 0; */
+}
+
+#title{
+    margin: 15px 0 10px 0;
+}
+
+#url-entry{
+    border: 1px solid black;
+    padding: 5px 10px;
+    /* margin-bottom: 15px; */
+}
+
+#url-entry:focus{
+    outline: none;
+    outline: 1px solid black;
+}
+
+#check-button{
+    background-color: black;
+    color: lightyellow;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#check-button:hover{
+    cursor: pointer;
+    background-color: #ededb5;
+    color: black;
+    border: 1px solid black;
 }

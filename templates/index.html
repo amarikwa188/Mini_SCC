@@ -24,7 +24,22 @@
                 <p id="status"
                 style="background-color: lightpink;">offline</p>
             {% endif %}
+            <p id="notification">*</p>
         </div>
     </div>
+
+    {% if notify %}
+    <script>
+        const notification = document.getElementById("notification");
+        notification.style.color = "black";
+
+        setTimeout(removeNotification, 2000);
+
+        function removeNotification(){
+            notification.style.color = "lightyellow";
+        }
+        
+    </script>
+    {% endif %}
 </body>
 </html>

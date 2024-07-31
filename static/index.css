@@ -58,6 +58,7 @@ body{
     border: 1px solid black;
     padding: 5px 10px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 #url-entry:focus{
@@ -82,8 +83,17 @@ body{
 
 #status{
     border: 1px solid black;
+    width: 150px;
     width: 70%;
     margin: auto;
     margin-top: 5px;
     padding: 3px 0; 
+    margin-right: 3px;
+    display: inline-block;
+}
+
+#notification{
+    display: inline;
+    font-size: 17px;
+    color: lightyellow;
 }

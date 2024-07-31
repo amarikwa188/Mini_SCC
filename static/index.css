@@ -23,7 +23,11 @@ body{
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    text-align: center;
+
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 #logo{
@@ -39,17 +43,21 @@ body{
     height: 100%;
 
     text-align: center;
-    /* padding: 35px 0; */
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #title{
-    margin: 15px 0 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 21px;
+    margin: 20px 0 20px 0;
 }
 
 #url-entry{
     border: 1px solid black;
     padding: 5px 10px;
-    /* margin-bottom: 15px; */
+    margin-bottom: 10px;
 }
 
 #url-entry:focus{
@@ -70,4 +78,13 @@ body{
     background-color: #ededb5;
     color: black;
     border: 1px solid black;
+}
+
+#status{
+    background-color: lightgreen;
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 3px 0; 
 }

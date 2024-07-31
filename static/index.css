@@ -1,0 +1,23 @@
+#main{
+    background-color: lightyellow;
+    height: 150px;
+    width: 400px;
+}
+
+#logo-section{
+    /* display: inline-block; */
+    border: 1px solid black;
+    float: left;
+    width: 45%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#entry-section{
+    /* display: inline-block; */
+    border: 1px solid black;
+    float: right;
+    width: 55%;
+    box-sizing: border-box;
+    height: 100%;
+}

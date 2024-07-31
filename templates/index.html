@@ -12,9 +12,18 @@
         </div>
         <div id="entry-section">
             <h3 id="title">Site Connectivity Checker</h3>
-            <input type="text" id="url-entry" placeholder="Enter a URL">
-            <button id="check-button">Check</button>
-            <p id="status">online</p>
+            <form action="#" method="POST">
+                <input type="text" id="url-entry" placeholder="Enter a URL" name="url" required>
+                <input type="submit" id="check-button" value="Check">
+            </form>
+            {% if status %}
+                <p id="status"
+                style="background-color: lightgreen;">online</p>
+            {% endif %}
+            {% if not status %}
+                <p id="status"
+                style="background-color: lightpink;">offline</p>
+            {% endif %}
         </div>
     </div>
 </body>

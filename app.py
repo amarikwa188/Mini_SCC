@@ -25,7 +25,6 @@ def check_site(url, timeout=5) -> bool:
 @app.route("/", methods=["post", "get"])
 def index() -> str:
     is_online = False
-    url = "Enter a URL"
     notify: bool = False
 
     if request.method == "POST":
@@ -33,8 +32,10 @@ def index() -> str:
         is_online: bool = check_site(url)
         notify = True
 
-    return render_template("index.html", url=url, status=is_online,
-                           notify=notify)
+        return render_template("index.html", url=url, status=is_online,
+                            notify=notify)
+
+    return render_template("index.html")
 
 
 if __name__ == "__main__":

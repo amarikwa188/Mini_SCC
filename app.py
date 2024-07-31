@@ -9,7 +9,6 @@ app: Flask = Flask(__name__)
 def check_site(url, timeout=5) -> bool:
     parser: ParseResult = urlparse(url)
     host_name: str = parser.netloc or parser.path.split("/")[0]
-    # print(f"\n{host_name}\n")
     for port in (80, 443):
         connection: HTTPConnection = HTTPConnection(host=host_name, port=port,
                                                     timeout=timeout)

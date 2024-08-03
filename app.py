@@ -16,7 +16,7 @@ def check_site(url, timeout=5) -> bool:
             connection.request("HEAD", "/")
             return True
         except Exception as ex:
-            print(ex, ex.with_traceback)
+            print(ex, ex.with_traceback())
         finally:
             connection.close()
 
